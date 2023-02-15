@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    <link rel="icon" href="img/auricular.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Handlee&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;700;800&family=Rubik:wght@300;400;500&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1C1C1C] text-[#fff] font-['Poppins']">
+    <header class="w-[100%] h-[60px] flex items-center justify-between px-40 fixed z-10 max-[800px]:px-[20px]">
+        <ion-icon class="text-[35px]" name="headset"></ion-icon>
+        <ul id="list" class="flex items-center gap-10 text-[#A3A3A3] text-[16px] max-[500px]:absolute max-[500px]:w-[100%] max-[500px]:left-0 max-[500px]:top-[-300%] max-[500px]:flex-col max-[500px]:gap-[20px] max-[500px]:py-5 max-[500px]:bg-[#1C1C1C] duration-300">
+            <li class="hover:text-[#fff] cursor-pointer"><a href="#home">Home</a></li>
+            <li class="hover:text-[#fff] cursor-pointer"><a href="#specs">Specs</a></li>
+            <li class="hover:text-[#fff] cursor-pointer"><a href="#case">Case</a></li>
+            <li class="hover:text-[#fff] cursor-pointer"><a href="#products">Products</a></li>
+        </ul>
+        <ion-icon id="btn-items" class="text-[#fff] text-[25px] hidden max-[500px]:block" name="grid-outline"></ion-icon>
+    </header>
+    <section id="home" class="max-w-[1000px] overflow-hidden h-[100vh] m-auto relative flex flex-col justify-center max-[800px]:w-[100%]">
+        <img class="animate__animated animate__fadeInDown animate__slow absolute top-[-30%] left-0 max-[800px]:left-[50%] max-[800px]:w-[50%] max-[500px]:top-[-10%]" src="img/home.png" alt="">
+        <div class="animate__animated animate__fadeInUp relative self-end w-[500px] max-[800px]:w-[100%] max-[800px]:pl-[20px]">
+            <span class="absolute top-[-85px] right-[0] text-[5.5rem] font-[700] text-[#fff]/[.20]">On Ear</span>
+            <h1 class="text-[3rem] font-[600]">Beats 3</h1>
+            <div class="flex flex-col gap-[7px]">
+                <h5 class="text-[20px] font-[500]">Overview</h5>
+                <p class="font-[300] text-[15px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, sunt numquam magni harum quo eveniet ea suscipit inventore tempora optio cumque eum? Quo tempora, explicabo repellat unde similique ullam illum.</p>
+            </div>
+            <button class="bg-[#fff] text-[#000] p-[10px] px-7 rounded-lg mt-[15px] pointer">Add to Bag $299</button>
+        </div>
+    </section>
+    <section id="specs" class="w-[100%] overflow-hidden h-auto flex flex-col justify-center items-center mb-[70px]">
+        <div class="flex flex-wrap justify-center gap-[40px] w-[700px] max-[800px]:w-[100%] max-[800px]:px-10 max-[800px]:gap-[30px]">
+            <div class="flex items-center" data-aos="fade-up">
+                <ion-icon class="text-[27px] mr-[5px]" name="logo-apple"></ion-icon>
+                <h4 class="text-[20px]">Apple</h4>
+            </div>
+            <div class="flex items-center" data-aos="fade-up" data-aos-delay="300">
+                <ion-icon class="text-[27px] mr-[5px]" name="logo-facebook"></ion-icon>
+                <h4 class="text-[20px]">Facebook</h4>
+            </div>
+            <div class="flex items-center" data-aos="fade-up" data-aos-delay="500">
+                <ion-icon class="text-[27px] mr-[5px]" name="logo-amazon"></ion-icon>
+                <h4 class="text-[20px]">Amazon</h4>
+            </div>
+            <div class="flex items-center" data-aos="fade-up" data-aos-delay="700">
+                <ion-icon class="text-[27px] mr-[5px]" name="logo-youtube"></ion-icon>
+                <h4 class="text-[20px]">Youtube</h4>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-[100px] max-[800px]:w-[100%]" data-aos="fade-up" data-aos-delay="700">
+            <h2 class="text-[4rem] text-[#fff]/[.20] font-[500] mb-[30px]">Specs</h2>
+            <div class="flex gap-[30px] max-[800px]:w-[100%] max-[800px]:justify-between max-[800px]:pl-[15px]">
+                <div class=" flex flex-col justify-between">
+                    <div class="ml-[20px]">
+                        <ion-icon class="text-[25px]" name="bluetooth"></ion-icon>
+                        <h5 class="text-[17px]">Connection</h5>
+                        <h6 class="text-[15px] text-[#A3A3A3]">Bluetooth v5.2</h6>
+                    </div>
+                    <div class="">
+                        <ion-icon class="text-[25px]" name="battery-charging"></ion-icon>
+                        <h5 class="text-[17px]">Battery</h5>
+                        <h6 class="text-[15px] text-[#A3A3A3]">Duration 40h</h6>
+                    </div>
+                    <div class="">
+                        <ion-icon class="text-[25px]" name="push"></ion-icon>
+                        <h5 class="text-[17px]">Load</h5>
+                        <h6 class="text-[15px] text-[#A3A3A3]">Fast charge 4.2-AAC</h6>
+                    </div>
+                    <div class="ml-[20px]">
+                        <ion-icon class="text-[25px]" name="mic"></ion-icon>
+                        <h5 class="text-[17px]">Microphone</h5>
+                        <h6 class="text-[15px] text-[#A3A3A3]">Supports Siri and Google</h6>
+                    </div>
+                </div>
+                <img class="max-[800px]:w-[50%] max-[800px]:h-[50%] m-auto" src="img/specs.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="case" class=" w-[100%] overflow-hidden h-auto flex flex-col justify-center items-center mt-[200px] mb-[100px]">
+        <div class="flex flex-col justify-center items-center" data-aos="fade-up" data-aos-delay="700">
+            <h2 class="text-[4rem] text-[#fff]/[.20] font-[500] mb-[30px]">Case</h2>
+            <div class="flex max-[800px]:flex-col">
+                <img class="max-[800px]:w-[50%] m-auto" src="img/case.png" alt="">
+                <div class="w-[400px] flex flex-col justify-center ml-[50px] max-[800px]:ml-0 max-[800px]:mt-10 max-[800px]:w-[100%] max-[800px]:p-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora repudiandae itaque id ex quas veniam unde iste laudantium, impedit velit eos doloremque magni sed molestias! Quisquam enim expedita nobis.</p>
+                    <button class="self-baseline p-[10px] px-5 rounded-lg mt-[15px] bg-[#fff] text-[#000]">More Info</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#373737] flex p-[40px] px-20 flex justify-between mt-[150px] rounded-[30px] mx-[20px] max-[740px]:flex-col max-[740px]:items-center max-[740px]:gap-[30px] max-[450px]:p-[30px]">
+            <div class="flex flex-col justify-center gap-[10px]" data-aos="fade-right">
+                <h2 class="text-[25px] font-[500]">Immerse yourself in<br> your music</h2>
+                <h5 class="text-[17px] text-[#A3A3A3]">Get it now, up to 50% off.</h5>
+                <button class="self-baseline bg-[#000] p-[10px] px-5 rounded-lg flex items-center gap-[5px]"><ion-icon name="bag-check"></ion-icon>Shop Now</button>
+            </div>
+            <img data-aos="fade-left" class="w-[45%] max-[740px]:w-[300px] max-[740px]:h-[200px] max-[500px]:w-[100%] max-[500px]:h-[100%]" src="img/discount.png" alt="">
+        </div>
+    </section>
+    <section id="products" class="flex flex-col overflow-hidden justify-center items-center mb-[70px]" data-aos="fade-up">
+        <h2 class="text-center text-[4rem] text-[#fff]/[.20] font-[500] mb-[30px]">Choose<br> Your Style</h2>
+        <div class="flex flex-wrap justify-center gap-[30px] w-[700px] max-[700px]:w-[100%]">
+            <div class="w-[150px] bg-[#373737] w-[200px] p-[13px] rounded-[15px]">
+                <img class="w-[70%] m-auto" src="img/product1.png" alt="">
+                <div class="flex justify-between items-center mt-[10px]">
+                    <h5>Black<br><span class="text-[#A3A3A3]">$249</span></h5>
+                    <ion-icon class="bg-[#000] p-2 rounded-lg" name="bag-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="w-[150px] bg-[#373737] w-[200px] p-[13px] rounded-[15px]">
+                <img class="w-[70%] m-auto" src="img/product2.png" alt="">
+                <div class="flex justify-between items-center mt-[10px]">
+                    <h5>Red Black<br><span class="text-[#A3A3A3]">$249</span></h5>
+                    <ion-icon class="bg-[#000] p-2 rounded-lg" name="bag-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="w-[150px] bg-[#373737] w-[200px] p-[13px] rounded-[15px]">
+                <img class="w-[70%] m-auto" src="img/product3.png" alt="">
+                <div class="flex justify-between items-center mt-[10px]">
+                    <h5>Night Black<br><span class="text-[#A3A3A3]">$249</span></h5>
+                    <ion-icon class="bg-[#000] p-2 rounded-lg" name="bag-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="w-[150px] bg-[#373737] w-[200px] p-[13px] rounded-[15px]">
+                <img class="w-[70%] m-auto" src="img/product4.png" alt="">
+                <div class="flex justify-between items-center mt-[10px]">
+                    <h5>Blue<br><span class="text-[#A3A3A3]">$249</span></h5>
+                    <ion-icon class="bg-[#000] p-2 rounded-lg" name="bag-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="w-[150px] bg-[#373737] w-[200px] p-[13px] rounded-[15px]">
+                <img class="w-[70%] m-auto" src="img/product5.png" alt="">
+                <div class="flex justify-between items-center mt-[10px]">
+                    <h5>Twilight gray<br><span class="text-[#A3A3A3]">$249</span></h5>
+                    <ion-icon class="bg-[#000] p-2 rounded-lg" name="bag-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="w-[150px] bg-[#373737] w-[200px] p-[13px] rounded-[15px]">
+                <img class="w-[70%] m-auto" src="img/product1.png" alt="">
+                <div class="flex justify-between items-center mt-[10px]">
+                    <h5>Black Custom<br><span class="text-[#A3A3A3]">$249</span></h5>
+                    <ion-icon class="bg-[#000] p-2 rounded-lg" name="bag-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-6">
+        <h6 class="text-center">Derechos <strong>@cafecito</strong></h6>
+        <h6 class="text-center">2023</h6>
+    </footer>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1000,
+        });
+    </script>
+</body>
+</html>
